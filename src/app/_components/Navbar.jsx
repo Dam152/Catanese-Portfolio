@@ -2,12 +2,33 @@
 'use client';
 
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useState , useEffect} from 'react'
 import { IoIosMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 
 export default function Navbar() {
     const[isOpen, setIsOpen] = useState(false);
+
+    useEffect(()=>{
+
+      const handleScroll = ()=>
+      {
+          if(window.scrollY > 100)
+          {
+              setIsOpen(false);
+          }
+
+         
+      }
+
+      window.addEventListener('scroll', handleScroll);
+
+      return ()=>{
+          window.removeEventListener('scroll', handleScroll);
+      }
+      
+  },[]);
+  
   
   return (
     <nav className='w-screen h-16  flex items-center z-50 sticky backdrop-blur-sm bg-NavColor'>
