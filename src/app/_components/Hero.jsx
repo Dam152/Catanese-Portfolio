@@ -1,8 +1,8 @@
-'use client';
+
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { Zoom } from 'react-awesome-reveal';
+
 
 export default function Hero() {
   return (
@@ -20,7 +20,7 @@ export default function Hero() {
 
         <div className='w-1/2 flex justify-center max-md:w-full'>
             <div className='circle-container'>
-                <Zoom><Image src={'/volto.png'} width={597} height={597} alt='img-hero' className='rounded-roundedImg max-xl:w-96 max-xl:h-96 max-lg:max-w-80 max-lg:h-80  max-sm:w-56 max-sm:h-56'></Image></Zoom>
+                <Image src={'/volto.png'} width={597} height={597} alt='img-hero' className='rounded-roundedImg max-xl:w-96 max-xl:h-96 max-lg:max-w-80 max-lg:h-80  max-sm:w-56 max-sm:h-56'></Image>
             </div>
         </div>
     </section>
