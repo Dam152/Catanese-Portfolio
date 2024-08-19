@@ -7,11 +7,26 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      backgroundColor:{
+        NavColor: '#171717',
+        buttonColor:'#27AE60',
+        cardServizi: '#212121'
       },
+      textColor:{
+        textSubHero: '#828282',
+        gray2: "#4F4F4F",
+        green2: "#27AE60"
+      },
+      fontSize:{
+        fontSubHero: '1.12rem'
+      },
+      borderRadius:{
+        roundedImg: "50%"
+      },
+     width:{
+       cardservizi: '349px',
+       form: '750px'
+     }
     },
   },
   plugins: [],
