@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <nav className='w-screen h-16  flex items-center z-50 sticky backdrop-blur-sm bg-NavColor'>
         <div className='flex items-center w-full justify-between px-20 max-sm:px-10'>
-            <h1 className='font-bold text-4xl max-md:text-xl'>Luca Catanese</h1>
+            <h1 className='font-bold text-4xl max-md:text-xl'>Damiano Ciucci</h1>
             <div className='flex gap-10 max-md:hidden'>
                 <Link href={'#about'}>About me</Link>
                 <Link href={'#servizi'}>Sevices</Link>
