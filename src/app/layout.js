@@ -5,37 +5,54 @@ import Navbar from "./_components/Navbar";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Luca Catanese | Social Media Manager",
-  description: "Luca Catanese - Esperto Social Media Manager con anni di esperienza nel creare strategie digitali efficaci, migliorare la presenza online e aumentare l'engagement del pubblico. Scopri come posso aiutarti a raggiungere i tuoi obiettivi di marketing attraverso un approccio creativo e data-driven.",
-  keywords: "Luca Catanese, Social Media Manager, Digital Marketing, Gestione Social Media, Strategie Social Media, Content Creation, Marketing Digitale, Brand Awareness, Engagement",
-  author: "Luca Catanese",
+  title: "Giacomo Roberti | Voice Actor",
+  description:
+    "Giacomo Roberti - Attore di voce professionista con esperienza nel doppiaggio, pubblicità, videogiochi e narrazione. La sua voce versatile e coinvolgente dà vita a personaggi e progetti, offrendo performance di alta qualità per ogni esigenza di produzione. Scopri come la sua voce può elevare il tuo progetto a un nuovo livello.",
+  keywords: [
+    "Giacomo Roberti",
+    "voice actor",
+    "doppiatore",
+    "attore di voce",
+    "doppiaggio",
+    "pubblicità",
+    "videogiochi",
+    "narrazione",
+    "attore professionista",
+  ],
+  author: "Giacomo Roberti",
   openGraph: {
-    title: "Luca Catanese | Social Media Manager",
-    description: "Scopri come Luca Catanese può trasformare la tua presenza sui social media con strategie innovative e un'esperienza consolidata nel settore.",
-    url: "https://www.lucacatanese.com", 
+    title: "Giacomo Roberti | Voice Actor",
+    description:
+      "Giacomo Roberti - Attore di voce con esperienza nel doppiaggio, pubblicità, videogiochi e narrazione. Voce versatile e coinvolgente per ogni progetto.",
     type: "website",
+    url: "https://www.giacomoroberti.com", // Cambia con l'URL reale
     images: [
       {
-        url: "/volto.png", 
+        url: "/volto.png", // Cambia con l'URL dell'immagine
         width: 1200,
         height: 630,
-        alt: "Luca Catanese - Social Media Manager",
+        alt: "Giacomo Roberti Voice Actor",
       },
     ],
+    locale: "it_IT",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@LucaCatanese", // Sostituisci con l'handle Twitter
-    title: "Luca Catanese | Social Media Manager",
-    description: "Esperto in strategie di social media marketing, Luca Catanese aiuta i brand a crescere e ad aumentare l'engagement con contenuti mirati e creativi.",
-    image: "/volto.png", 
+    site: "@giacomoroberti", // Cambia con l'handle Twitter
+    title: "Giacomo Roberti | Voice Actor",
+    description:
+      "Attore di voce professionista con esperienza nel doppiaggio, pubblicità, videogiochi e narrazione. Scopri come Giacomo Roberti può dare voce al tuo progetto.",
+    image: "https://www.giacomoroberti.com/profile.jpg", // Cambia con l'URL dell'immagine
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={dmSans.className}><Navbar></Navbar>{children}</body>
+      <body className={dmSans.className}>
+        <Navbar></Navbar>
+        {children}
+      </body>
     </html>
   );
 }
