@@ -29,7 +29,7 @@ export default function Navbar() {
       setTimeout(() => {
         setIsOpen(false);
         setIsClosing(false);
-      }, 300);
+      }, 100);
     } else {
       setIsOpen(true);
     }

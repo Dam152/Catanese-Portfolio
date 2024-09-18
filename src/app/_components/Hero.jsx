@@ -14,16 +14,19 @@ export default function Hero() {
             Voice Actor
           </p>
           <div className="flex gap-3 mt-9 max-sm:mt-6">
-            <div className="w-36 h-10 flex justify-center items-center bg-buttonColor hover:scale-105 max-sm:w-32">
-              <Link href={"/giacomo.jpg"} className="text-sm">
-                Download CV
-              </Link>
-            </div>
-            <div className="w-36 h-10 flex justify-center items-center border border-gray-300 hover:scale-105 max-sm:w-32">
-              <Link href={"#about"} className="text-sm">
-                Learn more
-              </Link>
-            </div>
+            <Link
+              href={"/giacomo.jpg"}
+              className="text-sm w-36 h-10 flex justify-center items-center bg-buttonColor hover:scale-105 max-sm:w-32"
+            >
+              Download CV
+            </Link>
+
+            <Link
+              href={"#about"}
+              className="text-sm w-36 h-10 flex justify-center items-center border border-gray-300 hover:scale-105 max-sm:w-32"
+            >
+              Learn more
+            </Link>
           </div>
         </div>
       </div>
